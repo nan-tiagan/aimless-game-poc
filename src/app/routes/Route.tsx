@@ -1,9 +1,10 @@
 import { Box } from "@chakra-ui/react";
 import RouteService from "./RouteService";
 import LGNFRM_CMP01 from "../features/LGNFRM_CMP01/LGNFRM_CMP01";
+import mock from "../features/__mock__/mock";
 
 export function DFLTPG_RT001(): RouteService {
-  return new RouteService("/", <Box>Default Comp</Box>);
+  return new RouteService("/", mock());
 }
 
 export function LGNFRM_RT001(): RouteService {
